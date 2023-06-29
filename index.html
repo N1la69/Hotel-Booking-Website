@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="StyleSheets\style.css">
     <title>Hotel Booking Website</title>
 </head>
@@ -21,7 +22,7 @@
                 <i class="ri-hotel-line nav_logo-icon"></i>
                 <a href="#" class="nav_logo">Hotels</a>
             </div>
-        
+
             <!-- NavBar -->
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list">
@@ -62,12 +63,82 @@
 
         <!-- Home -->
         <section class="home" id="home">
+            <div class="swiper_class swiper">
+                <div class="wrapper swiper-wrapper">
 
+                    <!-- SLIDE 1 -->
+                    <div class="home_slide swiper-slide">
+                        <img src="Res\home1.jpg" alt="homeImg" class="home_img">
+                        <div class="image_data grid">
+                            <h1 class="home_title">Spend Your Holidays</h1>
+                            <p class="home_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                                maxime. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Dolorum suscipit quos eum asperiores eius ipsa velit, ratione nam soluta nulla t
+                            </p>
+                            <div class="buttons grid">
+                                <a href="#" class="button1">Read More</a>
+                                <a href="#" class="button2">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SLIDE 2 -->
+                    <div class="home_slide swiper-slide">
+                        <img src="Res\home2.jpg" alt="homeImg" class="home_img">
+                        <div class="image_data grid">
+                            <h1 class="home_title">Spend Your Holidays</h1>
+                            <p class="home_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                                maxime. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Dolorum suscipit quos eum asperiores eius ipsa velit, ratione nam soluta nulla t
+                            </p>
+                            <div class="buttons grid">
+                                <a href="#" class="button1">Read More</a>
+                                <a href="#" class="button2">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SLIDE 3 -->
+                    <div class="home_slide swiper-slide">
+                        <img src="Res\home3.jpg" alt="homeImg" class="home_img">
+                        <div class="image_data grid">
+                            <h1 class="home_title">Spend Your Holidays</h1>
+                            <p class="home_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                                maxime. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Dolorum suscipit quos eum asperiores eius ipsa velit, ratione nam soluta nulla t
+                            </p>
+                            <div class="buttons grid">
+                                <a href="#" class="button1">Read More</a>
+                                <a href="#" class="button2">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next swiper_button"></div>
+                    <div class="swiper-button-prev swiper_button"></div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about_container container grid">
+            
         </section>
     </main>
 
 </body>
 <!-- Necessary Scripts -->
 <script src="JS\index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".swiper_class", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+    });
+</script>
 
 </html>

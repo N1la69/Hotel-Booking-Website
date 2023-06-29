@@ -242,6 +242,9 @@ input {
         padding: 3rem;
         transition: .4s;
     }
+    .swiper_button{
+        display: none;
+    }
 }
 
 .nav_list {
@@ -302,3 +305,56 @@ input {
 }
 
 /********* Home ************/
+.swiper_class{
+    width: 100%;
+    height: 75vh;
+}
+.home_slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.home_img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image_data {
+    color: var(--white-color);
+    position: absolute;
+    top: 7rem;
+    row-gap: 2rem;
+    left: 1rem;
+    text-align: left;
+}
+.home_description{
+    margin-bottom: var(--mb-2-5);
+    font-size: 1rem;
+}
+.home_title{
+    -webkit-text-stroke: .2px black;
+    color: var(--white-color);
+    font-size: 3.25rem;
+    font-weight: var(--font-semi-bold);
+    margin-bottom: var(--mb-0-5);
+}
+.buttons{
+    display: flex;
+    column-gap: 2rem;
+    font-weight: var(--font-semi-bold);
+}
+.buttons .button1{
+    padding: 10px 20px;
+    background: var(--title-color);
+    color: var(--white-color);
+}
+.buttons .button2{
+    padding: 10px 20px;
+    border: 2px solid var(--title-color);
+    background: transparent;
+    color: var(--white-color);
+}
+
+/********* About ************/
