@@ -170,7 +170,132 @@
 
         <!-- Rooms -->
         <section class="room_container container" id="room">
+            <h2 class="section_title rooms_title">Available Rooms</h2>
+            <h2 class="room_subtitle">Swipe to see more</h2>
+            <div class="room_swiper swiper1">
+                <div class="room_wrapper swiper-wrapper">
 
+                    <!-- ROOM 1 -->
+                    <div class="room_slide swiper-slide">
+                        <img src="Res\room1.jpg" alt="roomImg" class="room_img">
+                        <div class="room_content">
+                            <h2 class="room_title">Superior Room</h2>
+                            <span class="room_rating">
+                                <i class="ri-star-line room_rating-icon"></i>
+                                <span class="room-rating-number">4.8</span>
+                            </span>
+                            <div class="room_data">
+                                <a href="#" class="room_button">Book Now</a>
+                                <div class="room_price">
+                                    <span class="room_price-number">2599/-</span>
+                                    <span class="room_subtitle">Per Night</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ROOM 2 -->
+                    <div class="room_slide swiper-slide">
+                        <img src="Res\room2.jpg" alt="roomImg" class="room_img">
+                        <div class="room_content">
+                            <h2 class="room_title">Normal Room</h2>
+                            <span class="room_rating">
+                                <i class="ri-star-line room_rating-icon"></i>
+                                <span class="room-rating-number">4.4</span>
+                            </span>
+                            <div class="room_data">
+                                <a href="#" class="room_button">Book Now</a>
+                                <div class="room_price">
+                                    <span class="room_price-number">2599/-</span>
+                                    <span class="room_subtitle">Per Night</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ROOM 3 -->
+                    <div class="room_slide swiper-slide">
+                        <img src="Res\room3.jpg" alt="roomImg" class="room_img">
+                        <div class="room_content">
+                            <h2 class="room_title">Delux Room</h2>
+                            <span class="room_rating">
+                                <i class="ri-star-line room_rating-icon"></i>
+                                <span class="room-rating-number">5.0</span>
+                            </span>
+                            <div class="room_data">
+                                <a href="#" class="room_button">Book Now</a>
+                                <div class="room_price">
+                                    <span class="room_price-number">2599/-</span>
+                                    <span class="room_subtitle">Per Night</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ROOM 4 -->
+                    <div class="room_slide swiper-slide">
+                        <img src="Res\room1.jpg" alt="roomImg" class="room_img">
+                        <div class="room_content">
+                            <h2 class="room_title">Luxury Suite</h2>
+                            <span class="room_rating">
+                                <i class="ri-star-line room_rating-icon"></i>
+                                <span class="room-rating-number">4.9</span>
+                            </span>
+                            <div class="room_data">
+                                <a href="#" class="room_button">Book Now</a>
+                                <div class="room_price">
+                                    <span class="room_price-number">2599/-</span>
+                                    <span class="room_subtitle">Per Night</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ROOM 5 -->
+                    <div class="room_slide swiper-slide">
+                        <img src="Res\room2.jpg" alt="roomImg" class="room_img">
+                        <div class="room_content">
+                            <h2 class="room_title">Family Room</h2>
+                            <span class="room_rating">
+                                <i class="ri-star-line room_rating-icon"></i>
+                                <span class="room-rating-number">4.5</span>
+                            </span>
+                            <div class="room_data">
+                                <a href="#" class="room_button">Book Now</a>
+                                <div class="room_price">
+                                    <span class="room_price-number">2599/-</span>
+                                    <span class="room_subtitle">Per Night</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ROOM 6 -->
+                    <div class="room_slide swiper-slide">
+                        <img src="Res\room6.jpg" alt="roomImg" class="room_img">
+                        <div class="room_content">
+                            <h2 class="room_title">Budget Room</h2>
+                            <span class="room_rating">
+                                <i class="ri-star-line room_rating-icon"></i>
+                                <span class="room-rating-number">4.3</span>
+                            </span>
+                            <div class="room_data">
+                                <a href="#" class="room_button">Book Now</a>
+                                <div class="room_price">
+                                    <span class="room_price-number">2599/-</span>
+                                    <span class="room_subtitle">Per Night</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-next swiper_button"></div>
+                <div class="swiper-button-prev swiper_button"></div>
+
+            </div>
         </section>
     </main>
 
@@ -178,6 +303,7 @@
 <!-- Necessary Scripts -->
 <script src="JS\index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 <script>
     var swiper = new Swiper(".swiper_class", {
         navigation: {
@@ -185,6 +311,22 @@
             prevEl: ".swiper-button-prev",
         },
         loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+</script>
+
+<script>
+    var swiper1 = new Swiper(".room_swiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
     });
 </script>
 
