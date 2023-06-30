@@ -192,7 +192,7 @@ input {
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: transparent;
+    background: transparent;
 
 }
 
@@ -358,3 +358,54 @@ input {
 }
 
 /********* About ************/
+.about_container{
+    position: relative;
+    padding-top: 4rem;
+}
+.about_title{
+    font-size: 2.5rem;
+    font-weight: var(--font-semi-bold);
+    margin-bottom: var(--mb-0-5);
+}
+.about_subtitle{
+    position: relative;
+    color: var(--title-color);
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: var(--mb-1-25);
+    font-size: var(--normal-font-size);
+    font-weight: 400;
+}
+.about_description{
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-1);
+}
+.left .buttons{
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    margin-left: var(--mb-1-25);
+    margin-right: var(--mb-1-25);
+}
+.experience_container{
+    row-gap: 2rem;
+    justify-content: center;
+    justify-items: center;
+}
+.experience_content{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.5rem;
+    justify-items: center;
+    padding: 0 1.5rem;
+}
+.experience_number {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: var(--mb-0-25);
+}
+
+.experience_description {
+    font-size: var(--small-font-size);
+}
+/********* Rooms ************/
