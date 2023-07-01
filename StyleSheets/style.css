@@ -550,3 +550,77 @@ input {
         color: var(--white-color);
     }
 }
+
+/********* News & Offer ************/
+.news_container {
+    position: relative;
+    padding: 4rem .25rem 1rem;
+    justify-content: center;
+    justify-items: center;
+    border: 1px dotted var(--title-color);
+}
+.news_title,.offer_title{
+    font-size: 2.5rem;
+    font-weight: var(--font-semi-bold);
+    margin-bottom: var(--mb-0-5);
+}
+.news_subtitle,.offer_subtitle{
+    position: relative;
+    font-size: 1.5rem;
+    color: var(--title-color);
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: var(--mb-1-25);
+    font-size: var(--normal-font-size);
+    font-weight: 400;
+}
+.news_content, .offer_content{
+    padding-top: .1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.news_headline, .offer_headline{
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+.news_description, .offer_description{
+    font-size: 1rem;
+    color: var(--first-color-alt);
+    margin-bottom: var(--mb-0-5);
+}
+
+/********* Subscribe ************/
+.subscribe_bg {
+    background-color: var(--first-color-alt);
+    padding: 2.5rem 0;
+}
+
+.subscribe_title,
+.subscribe_description {
+    color: var(--white-color);
+}
+
+.subscribe_description {
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+
+.subscribe_form {
+    background-color: var(--input-color);
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe_input {
+    width: 70%;
+    padding-right: .5rem;
+    background-color: var(--input-color);
+    color: var(--text-color);
+}
+
+.subscribe_input::placeholder {
+    color: var(--text-color);
+}
