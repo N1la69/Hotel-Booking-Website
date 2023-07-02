@@ -669,3 +669,75 @@ input {
     margin: 1.5rem 0 3rem;
     font-size: 1.5rem;
 }
+
+/********* Footer ************/
+.footer_container {
+    row-gap: 5rem;
+}
+
+.footer_content {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    row-gap: 2rem;
+}
+
+.footer_title,
+.footer_subtitle {
+    font-size: var(--h3-font-size);
+}
+
+.footer_title {
+    margin-bottom: var(--mb-0-5);
+}
+
+.footer_description {
+    margin-bottom: var(--mb-2);
+}
+
+.footer_social {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-right: var(--mb-1-25);
+}
+
+.footer_social:hover {
+    color: var(--text-color-light);
+}
+
+.footer_subtitle {
+    margin-bottom: var(--mb-1);
+}
+
+.footer_item {
+    margin-bottom: var(--mb-0-75);
+}
+
+.footer_link {
+    color: var(--text-color);
+}
+
+.footer_link:hover {
+    color: var(--title-color);
+}
+
+.footer_rights {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    text-align: center;
+}
+
+.footer_copy,
+.footer_terms-link {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+}
+
+.footer_terms {
+    display: flex;
+    column-gap: 1.5rem;
+    justify-content: center;
+}
+
+.footer_terms-link:hover {
+    color: var(--title-color);
+}
