@@ -624,3 +624,48 @@ input {
 .subscribe_input::placeholder {
     color: var(--text-color);
 }
+
+/********* Booking ************/
+.booking_container {
+    position: relative;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    justify-content: center;
+    justify-items: center;
+    background-color: var(--text-color-light);
+}
+.booking_title{
+    font-size: 2.5rem;
+    font-weight: var(--font-semi-bold);
+    margin-bottom: var(--mb-1-5);
+}
+.arr_time, .dept_time{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.arr_title, .dept_title{
+    font-size: 1.2rem;
+    margin-left: var(--mb-0-25);
+}
+.form{
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+}
+.form_content{
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 1.5rem;
+}
+.booking_input{
+    width: 100%;
+    padding: .5rem;
+    background-color: var(--first-color-alt);
+    color: var(--white-color);
+}
+::-webkit-input-placeholder{
+    color: var(--white-color);
+}
+.submit_button{
+    margin: 1.5rem 0 3rem;
+    font-size: 1.5rem;
+}
