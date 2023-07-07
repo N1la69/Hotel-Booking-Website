@@ -9,7 +9,7 @@
     --first-color: #9854cb;
     --first-color-second: #ddacf5;
     --first-color-alt: #64379f;
-    --title-color: #27104e; 
+    --title-color: #27104e;
     --text-color: #9f66e9;
     --text-color-light: #b28ae7;
     --input-color: #b28ae7;
@@ -66,11 +66,11 @@
 }
 
 /********* Dark Theme Var ************/
-body.dark-theme{
+body.dark-theme {
     /* COLORS */
     --first-color-second: #b87dd6;
     --first-color-alt: #10081f;
-    --title-color: #dbcaf1; 
+    --title-color: #dbcaf1;
     --text-color: #ede9f1;
     --input-color: #b28ae7;
     --body-color: #27104e;
@@ -135,7 +135,7 @@ h3 {
     font-family: var(--title-font);
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
@@ -216,7 +216,7 @@ input {
     align-items: center;
 }
 
-.logo_container{
+.logo_container {
     display: flex;
     left: 0;
     top: 0;
@@ -225,11 +225,14 @@ input {
     justify-items: center;
 }
 
-.nav_toggle,.nav_logo, .nav_logo-icon {
+.nav_toggle,
+.nav_logo,
+.nav_logo-icon {
     color: var(--white-color);
 }
 
-.nav_logo, .nav_logo-icon {
+.nav_logo,
+.nav_logo-icon {
     font-weight: var(--font-semi-bold);
 }
 
@@ -254,7 +257,8 @@ input {
         padding: 3rem;
         transition: .4s;
     }
-    .swiper_button{
+
+    .swiper_button {
         display: none;
     }
 }
@@ -317,22 +321,25 @@ input {
 }
 
 /********* Home ************/
-.swiper_class{
+.swiper_class {
     width: 100%;
     height: 75vh;
 }
+
 .home_slide {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-.home_img{
+}
+
+.home_img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .image_data {
     color: var(--white-color);
     position: absolute;
@@ -341,28 +348,33 @@ input {
     left: 1rem;
     text-align: left;
 }
-.home_description{
+
+.home_description {
     margin-bottom: var(--mb-2-5);
     font-size: 1rem;
 }
-.home_title{
+
+.home_title {
     -webkit-text-stroke: .2px black;
     color: var(--white-color);
     font-size: 3.25rem;
     font-weight: var(--font-semi-bold);
     margin-bottom: var(--mb-0-5);
 }
-.buttons{
+
+.buttons {
     display: flex;
     column-gap: 2rem;
     font-weight: var(--font-semi-bold);
 }
-.buttons .button1{
+
+.buttons .button1 {
     padding: 10px 20px;
     background: var(--title-color);
     color: var(--white-color);
 }
-.buttons .button2{
+
+.buttons .button2 {
     padding: 10px 20px;
     border: 2px solid var(--title-color);
     background: transparent;
@@ -370,16 +382,18 @@ input {
 }
 
 /********* About ************/
-.about_container{
+.about_container {
     position: relative;
     padding-top: 4rem;
 }
-.about_title{
+
+.about_title {
     font-size: 2.5rem;
     font-weight: var(--font-semi-bold);
     margin-bottom: var(--mb-0-5);
 }
-.about_subtitle{
+
+.about_subtitle {
     position: relative;
     color: var(--title-color);
     text-align: center;
@@ -388,29 +402,35 @@ input {
     font-size: var(--normal-font-size);
     font-weight: 400;
 }
-.about_description{
+
+.about_description {
     font-size: var(--normal-font-size);
     margin-bottom: var(--mb-1);
 }
-.left .buttons{
+
+.left .buttons {
     justify-content: center;
     align-items: center;
 }
-.right{
+
+.right {
     margin-left: var(--mb-1-25);
     margin-right: var(--mb-1-25);
 }
-.experience_container{
+
+.experience_container {
     row-gap: 2rem;
     justify-content: center;
     justify-items: center;
 }
-.experience_content{
+
+.experience_content {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2.5rem;
     justify-items: center;
     padding: 0 1.5rem;
 }
+
 .experience_number {
     font-size: var(--h2-font-size);
     font-weight: var(--font-semi-bold);
@@ -429,12 +449,14 @@ input {
     justify-content: center;
     justify-items: center;
 }
-.rooms_title{
+
+.rooms_title {
     font-size: 2.5rem;
     font-weight: var(--font-semi-bold);
     margin-bottom: var(--mb-0-5);
 }
-.room_subtitle{
+
+.room_subtitle {
     position: relative;
     font-size: 1.5rem;
     color: var(--title-color);
@@ -444,13 +466,15 @@ input {
     font-size: var(--normal-font-size);
     font-weight: 400;
 }
-.room_slide{
+
+.room_slide {
     min-width: 150px;
     max-width: 850px;
     position: relative;
     overflow: var(--img-hidden);
 }
-.room_img{
+
+.room_img {
     width: 100%;
     height: 100%;
 }
@@ -485,21 +509,25 @@ input {
     font-size: 1rem;
     margin-right: var(--mb-0-25);
 }
-.room_title{
+
+.room_title {
     font-size: 2.5rem;
     -webkit-text-stroke: .25px black;
     margin-bottom: var(--mb-0-25);
 }
-.room_data{
+
+.room_data {
     display: flex;
     column-gap: 2rem;
 }
-.room_button{
+
+.room_button {
     padding: 8px 10px;
     background-color: var(--title-color);
     color: var(--white-color);
 }
-.room_price{
+
+.room_price {
     justify-content: center;
     display: flex;
     column-gap: .5rem;
@@ -515,12 +543,14 @@ input {
     justify-content: center;
     justify-items: center;
 }
-.service_title{
+
+.service_title {
     font-size: 2.5rem;
     font-weight: var(--font-semi-bold);
     margin-bottom: var(--mb-0-5);
 }
-.service_subtitle{
+
+.service_subtitle {
     position: relative;
     font-size: 1.5rem;
     color: var(--title-color);
@@ -530,20 +560,23 @@ input {
     font-size: var(--normal-font-size);
     font-weight: 400;
 }
-.service_subtitle span{
+
+.service_subtitle span {
     color: var(--first-color-alt);
     font-size: 2rem;
     font-weight: 700;
     margin-left: var(--mb-0-25);
 }
-.service_content{
+
+.service_content {
     padding-top: 1.1rem;
     display: grid;
     row-gap: 2.5rem;
     column-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
 }
-.service_box{
+
+.service_box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -552,13 +585,17 @@ input {
     border: 1px solid var(--first-color-alt);
     transition: all .3s;
 }
-.service_icon{
+
+.service_icon {
     color: var(--title-color);
     font-size: 1.5rem;
 }
-.service_box:hover{
+
+.service_box:hover {
     background-color: var(--title-color);
-    .service_icon, .service_name{
+
+    .service_icon,
+    .service_name {
         color: var(--white-color);
     }
 }
@@ -571,12 +608,16 @@ input {
     justify-items: center;
     border: 1px dotted var(--title-color);
 }
-.news_title,.offer_title{
+
+.news_title,
+.offer_title {
     font-size: 2.5rem;
     font-weight: var(--font-semi-bold);
     margin-bottom: var(--mb-0-5);
 }
-.news_subtitle,.offer_subtitle{
+
+.news_subtitle,
+.offer_subtitle {
     position: relative;
     font-size: 1.5rem;
     color: var(--title-color);
@@ -586,18 +627,24 @@ input {
     font-size: var(--normal-font-size);
     font-weight: 400;
 }
-.news_content, .offer_content{
+
+.news_content,
+.offer_content {
     padding-top: .1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
 }
-.news_headline, .offer_headline{
+
+.news_headline,
+.offer_headline {
     text-decoration: underline;
     font-size: 1.2rem;
 }
-.news_description, .offer_description{
+
+.news_description,
+.offer_description {
     font-size: 1rem;
     color: var(--first-color-alt);
     margin-bottom: var(--mb-0-5);
@@ -646,38 +693,48 @@ input {
     justify-items: center;
     background-color: var(--text-color-light);
 }
-.booking_title{
+
+.booking_title {
     font-size: 2.5rem;
     font-weight: var(--font-semi-bold);
     margin-bottom: var(--mb-1-5);
 }
-.arr_time, .dept_time{
+
+.arr_time,
+.dept_time {
     position: relative;
     justify-content: center;
     align-items: center;
 }
-.arr_title, .dept_title{
+
+.arr_title,
+.dept_title {
     font-size: 1.2rem;
     margin-left: var(--mb-0-25);
 }
-.form{
+
+.form {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
 }
-.form_content{
-    grid-template-columns: repeat(2,1fr);
+
+.form_content {
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 1.5rem;
 }
-.booking_input{
+
+.booking_input {
     width: 100%;
     padding: .5rem;
     background-color: var(--first-color-alt);
     color: var(--white-color);
 }
-::-webkit-input-placeholder{
+
+::-webkit-input-placeholder {
     color: var(--white-color);
 }
-.submit_button{
+
+.submit_button {
     margin: 1.5rem 0 3rem;
     font-size: 1.5rem;
 }
@@ -780,4 +837,167 @@ input {
 /* SHOW SCROLL */
 .show-scroll {
     bottom: 5rem;
+}
+
+/********* Media Queries ************/
+/* SMALL DEVICES */
+@media screen and (max-width: 345px) {
+    .form_content {
+        grid-template-columns: max-content;
+        justify-content: center;
+        justify-items: center;
+        row-gap: 1.5rem;
+    }
+
+    .room_title {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .room_button {
+        padding: 8px 10px;
+    }
+
+    .room_price {
+        font-size: 1rem;
+        font-weight: 700;
+        column-gap: .5rem;
+    }
+}
+
+/* MEDIUM DEVICES */
+@media screen and (min-width: 568px) {
+    .service_content {
+        column-gap: .5rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .experience_content{
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 3rem;
+    }
+    .experience_number {
+        font-size: 2rem;
+        margin-bottom: var(--mb-0-5);
+    }
+    .experience_description {
+        font-size: 1rem
+    }
+}
+@media screen and (min-width: 760px){
+    body {
+        margin: 0;
+    }
+
+    .nav {
+        height: calc(var(--header-height) + 1.5rem);
+    }
+
+    .nav_link {
+        color: var(--white-color);
+        text-transform: initial;
+    }
+
+    .nav_link:hover {
+        color: var(--white-color);
+    }
+
+    .nav_dark {
+        position: initial;
+    }
+
+    .nav_menu {
+        display: flex;
+        column-gap: 2rem;
+    }
+    .nav_list {
+        flex-direction: row;
+        column-gap: 4rem;
+    }
+
+    .nav_toggle,
+    .nav_close,
+    .theme-change-name {
+        display: none;
+    }
+
+    .change-theme {
+        color: var(--white-color);
+    }
+
+    .active-link::before {
+        background-color: var(--white-color);
+    }
+
+    .scroll-header .nav_link,
+    .scroll-header .change-theme {
+        color: var(--text-color);
+    }
+
+    .scroll-header .active_link {
+        color: var(--title-color);
+    }
+
+    .scroll-header .active-link::before {
+        background-color: var(--title-color);
+    }
+
+    .section {
+        padding: 7rem 0 2rem;
+    }
+
+    .home{
+        height: 100vh;
+        display: flex;
+    }
+    .swiper_class{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-template-rows: 1.8fr .5fr;
+    }
+    .image_data{
+        display: flex;
+        padding: 10rem 0 5rem;
+        flex-direction: column;
+        row-gap: 4rem;
+    }
+    .home_title{
+        font-size: 3.5rem;
+    }
+    .home_description{
+        font-size: 1.2rem;
+    }
+
+    .left{
+        margin-left: var(--mb-1-25);
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .room_content{
+        display: flex;
+        row-gap: 2rem;
+    }
+    .room_title{
+        font-size: 3.5rem;
+    }
+    .room_rating,.room_rating-icon{
+        font-size: 2rem;
+    }
+    .room_data{
+        column-gap: 3.5rem;
+    }
+    .room_button{
+        padding: 15px 18px;
+    }
+    .swiper_button{
+        display: flex;
+        top: 30%;
+        right: 90%;
+        font-weight: 800;
+        color: var(--title-color);
+    }
+
+    
 }
