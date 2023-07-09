@@ -6,17 +6,19 @@
     --header-height: 3rem;
 
     /* COLORS */
-    --first-color: #9854cb;
-    --first-color-second: #ddacf5;
-    --first-color-alt: #64379f;
-    --title-color: #27104e;
-    --text-color: #9f66e9;
-    --text-color-light: #b28ae7;
-    --input-color: #b28ae7;
-    --body-color: #d1a3f5;
+    --first-color: #2d2c42;
+    --first-color-second: #8f98ae;
+    --first-color-alt: #1b1a2c;
+    --title-color: #ea323e;
+    --text-color: #53050a;
+    --text-color-light: #ec9399;
+    --input-color: #525a6e;
+    --body-color: #edf2f4;
     --white-color: #FFF;
-    --scroll-bar-color: #e6d2f0;
-    --scroll-thumb-color: #ddacf5;
+    --shadow-color: hsla(226, 64%, 15%, .15);
+    --shadow-color-second: hsl(226, 64%, 15%, .15);
+    --scroll-bar-color: #c0bcc2;
+    --scroll-thumb-color: #4b4a64;
 
     /* FONTS */
     --body-font: 'IBM Plex Sans', sans-serif;
@@ -68,14 +70,17 @@
 /********* Dark Theme Var ************/
 body.dark-theme {
     /* COLORS */
-    --first-color-second: #b87dd6;
-    --first-color-alt: #10081f;
-    --title-color: #dbcaf1;
-    --text-color: #ede9f1;
-    --input-color: #b28ae7;
-    --body-color: #27104e;
-    --scroll-bar-color: #cfabe0;
-    --scroll-thumb-color: #300b42;
+    --first-color: #fff;
+    --first-color-alt: #edf2f4;
+    --title-color: #B6EADA;
+    --text-color: #5B8FB9;
+    --text-color-light: #301E67;
+    --input-color: #03001C;
+    --body-color: #03001C;
+    --scroll-thumb-color: #c0bcc2;
+    --scroll-bar-color: #4b4a64;
+    --shadow-color: hsla(225, 30%, 92%, 0.15);
+    --shadow-color-second: hsla(228, 24%, 96%, 0.15);
     transition: all .7s;
 }
 
@@ -197,7 +202,7 @@ input {
     background-color: var(--text-color-light);
 }
 
-********* Loader ************/
+/********* Loader ************/
 .loader {
     position: fixed;
     margin: 0;
@@ -289,11 +294,13 @@ input {
 }
 
 .nav_toggle,
-.nav_logo,
-.nav_logo-icon {
+.nav_logo {
     color: var(--white-color);
 }
-
+.nav_logo-icon{
+    margin-top: .23rem;
+    color: var(--title-color);
+}
 .nav_logo,
 .nav_logo-icon {
     font-weight: var(--font-semi-bold);
@@ -311,12 +318,12 @@ input {
 @media screen and (max-width:767px) {
     .nav_menu {
         position: fixed;
-        background-color: var(--first-color-alt);
+        background-color: var(--body-color);
         top: 0;
         right: -100%;
         width: 70%;
         height: 100%;
-        box-shadow: -1px 0 4px hsla(226, 64%, 15%, .15);
+        box-shadow: -1px 0 4px var(--shadow-color);
         padding: 3rem;
         transition: .4s;
     }
@@ -375,7 +382,7 @@ input {
 /* BACKGROUND HEADER */
 .scroll-header {
     background-color: var(--body-color);
-    box-shadow: 0 0 4px hsl(226, 64%, 15%, .15);
+    box-shadow: 0 0 4px var(--shadow-color-second);
 }
 
 .scroll-header .nav_logo,
@@ -434,14 +441,23 @@ input {
 .buttons .button1 {
     padding: 10px 20px;
     background: var(--title-color);
-    color: var(--white-color);
+    color: var(--body-color);
+    transition: all .4s;
+}
+.buttons .button1:hover{
+    background-color: var(--text-color);
 }
 
 .buttons .button2 {
     padding: 10px 20px;
     border: 2px solid var(--title-color);
     background: transparent;
-    color: var(--white-color);
+    color: var(--first-color);
+    transition: all .4s;
+}
+.buttons .button2:hover{
+    background-color: var(--title-color);
+    color: var(--body-color);
 }
 
 /********* About ************/
@@ -458,7 +474,7 @@ input {
 
 .about_subtitle {
     position: relative;
-    color: var(--title-color);
+    color: var(--text-color);
     text-align: center;
     text-transform: capitalize;
     margin-bottom: var(--mb-1-25);
@@ -522,7 +538,7 @@ input {
 .room_subtitle {
     position: relative;
     font-size: 1.5rem;
-    color: var(--title-color);
+    color: var(--text-color);
     text-align: center;
     text-transform: capitalize;
     margin-bottom: var(--mb-1-25);
@@ -560,7 +576,7 @@ input {
 }
 
 .room_rating {
-    color: var(--first-color-alt);
+    color: var(--text-color);
     font-weight: var(--font-semi-bold);
     align-self: flex-start;
     display: flex;
@@ -574,8 +590,9 @@ input {
 }
 
 .room_title {
+    text-decoration: underline;
+    color: var(--text-color);
     font-size: 2.5rem;
-    -webkit-text-stroke: .25px black;
     margin-bottom: var(--mb-0-25);
 }
 
@@ -586,8 +603,14 @@ input {
 
 .room_button {
     padding: 8px 10px;
-    background-color: var(--title-color);
-    color: var(--white-color);
+    background-color: var(--text-color-light);
+    font-weight: 700;
+    color: var(--text-color);
+    transition: all .4s;
+}
+.room_button:hover{
+    background-color: var(--text-color);
+    color: var(--body-color);
 }
 
 .room_price {
@@ -595,7 +618,9 @@ input {
     display: flex;
     column-gap: .5rem;
     font-size: 1.2rem;
-    font-weight: var(--font-med);
+    font-weight: 600;
+    margin-top: 0.25rem;
+    color: var(--body-color);
 }
 
 /********* Services ************/
@@ -616,7 +641,7 @@ input {
 .service_subtitle {
     position: relative;
     font-size: 1.5rem;
-    color: var(--title-color);
+    color: var(--text-color);
     text-align: center;
     text-transform: capitalize;
     margin-bottom: var(--mb-1-25);
@@ -645,7 +670,7 @@ input {
     justify-content: center;
     text-align: center;
     padding: 15px 15px;
-    border: 1px solid var(--first-color-alt);
+    border: 1px solid var(--title-color);
     transition: all .3s;
 }
 
@@ -683,7 +708,7 @@ input {
 .offer_subtitle {
     position: relative;
     font-size: 1.5rem;
-    color: var(--title-color);
+    color: var(--text-color);
     text-align: center;
     text-transform: capitalize;
     margin-bottom: var(--mb-1-25);
@@ -715,7 +740,7 @@ input {
 
 /********* Subscribe ************/
 .subscribe_bg {
-    background-color: var(--first-color-alt);
+    background-color: #1b1a2c;
     padding: 2.5rem 0;
 }
 
@@ -742,9 +767,16 @@ input {
     background-color: var(--input-color);
     color: var(--text-color);
 }
+.sub_button{
+    background-color: var(--first-color-second);
+    color: var(--body-color);
+}
+.sub_button:hover{
+    background-color: var(--first-color-alt);
+}
 
 .subscribe_input::placeholder {
-    color: var(--text-color);
+    color: var(--first-color-second);
 }
 
 /********* Booking ************/
@@ -754,10 +786,11 @@ input {
     padding-bottom: 1rem;
     justify-content: center;
     justify-items: center;
-    background-color: var(--text-color-light);
+    background-color: var(--first-color-second);
 }
 
 .booking_title {
+    color: #1b1a2c;
     font-size: 2.5rem;
     font-weight: var(--font-semi-bold);
     margin-bottom: var(--mb-1-5);
@@ -774,6 +807,7 @@ input {
 .dept_title {
     font-size: 1.2rem;
     margin-left: var(--mb-0-25);
+    color: var(--body-color);
 }
 
 .form {
@@ -789,7 +823,7 @@ input {
 .booking_input {
     width: 100%;
     padding: .5rem;
-    background-color: var(--first-color-alt);
+    background-color: #1b1a2c;
     color: var(--white-color);
 }
 
@@ -798,8 +832,13 @@ input {
 }
 
 .submit_button {
+    cursor: pointer;
     margin: 1.5rem 0 3rem;
     font-size: 1.5rem;
+    transition: all .4s;
+}
+.submit_button:hover{
+    background-color: #60646e;
 }
 
 /********* Footer ************/
@@ -889,12 +928,12 @@ input {
 }
 
 .scrollup:hover {
-    background-color: var(--first-color-alt);
+    background-color: var(--title-color);
     opacity: 1;
 }
 
 .scrollup-icon {
-    color: var(--white-color);
+    color: var(--body-color);
 }
 
 /* SHOW SCROLL */
