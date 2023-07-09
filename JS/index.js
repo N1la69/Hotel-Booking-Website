@@ -1,3 +1,16 @@
+// LOADER //
+var loader = document.querySelector('.loader');
+window.addEventListener('load', () => {
+    loader.style.display = 'none';
+})
+try {
+    AOS.init({
+        duration: 1500,
+    });
+} catch {
+    console.log("Connection Error");
+}
+
 // SHOW MENU //
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
