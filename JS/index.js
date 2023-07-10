@@ -99,3 +99,35 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme);
     localStorage.setItem('selected-icon', getCurrentIcon);
 })
+
+// SCROLL REVEAL //
+const sr = ScrollReveal({
+    distance: '60px',
+    duration: 2800,
+    reset: true,
+})
+
+sr.reveal('.section_title, .about_description ,.news_headline, .offer_headline', {
+    origin: 'left',
+    interval: 150,
+    delay: 150
+})
+
+sr.reveal('.about_subtitle, .offer_description, .room_subtitle, .service_subtitle, .news_subtitle, .news_description, .offer_subtitle, .subscribe_description', {
+    origin: 'right',
+    interval: 200,
+    delay: 200
+})
+
+sr.reveal('.about_img, .room_wrapper, .footer_title, .footer_rights', {
+    origin: 'bottom',
+    distance: '100px',
+    delay: 200,
+    interval: 300
+})
+
+sr.reveal('.experience_content, .service_content, .footer_data', {
+    origin: 'top',
+    interval: 600,
+    delay: 250
+})

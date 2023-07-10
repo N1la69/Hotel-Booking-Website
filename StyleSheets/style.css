@@ -1045,7 +1045,7 @@ input {
     }
 
     .section {
-        padding: 7rem 0 2rem;
+        padding: 5rem 0 2rem;
     }
 
     .home{
@@ -1076,7 +1076,7 @@ input {
         justify-content: center;
         justify-items: center;
     }
-
+    
     .room_content{
         display: flex;
         row-gap: 2rem;
